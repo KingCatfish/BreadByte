@@ -21,20 +21,20 @@
   <section class="hero">
     <h1>Welcome to BreadByte</h1>
     <p>Artisan loaves, flaky pastries, and sweet indulgence—baked fresh by Jordy.</p>
-    <a href="#menu" class="button">Browse Menu</a>
   </section>
 
   <section id="menu" class="menu">
-    <h2>Our Bakes</h2>
-    <div class="grid">
-      <div class="item">Sourdough Loaves</div>
-      <div class="item">Focaccia</div>
-      <div class="item">Croissant</div>
-      <div class="item">Cinnamon Roll</div>
-      <div class="item">Cookies</div>
-      <div class="item">Brownies</div>
-    </div>
-  </section>
+  <h2>Browse Menu</h2>
+  <div class="grid">
+    <div class="item"><a href="sourdough.html">Sourdough Loaves</a></div>
+    <div class="item"><a href="focaccia.html">Focaccia</a></div>
+    <div class="item"><a href="croissant.html">Croissant</a></div>
+    <div class="item"><a href="cinnamon-roll.html">Cinnamon Roll</a></div>
+    <div class="item"><a href="cookies.html">Cookies</a></div>
+    <div class="item"><a href="brownies.html">Brownies</a></div>
+  </div>
+</section>
+
 
   <section id="about" class="about">
     <h2>About BreadByte</h2>
@@ -47,10 +47,15 @@
   <input type="hidden" name="_subject" value="New BreadByte Order!" />
   <input type="hidden" name="_next" value="https://breadbyte.netlify.app/thank-you.html" />
   
+  <form action="https://formspree.io/f/mzzabvog" method="POST">
+  <input type="hidden" name="_subject" value="New BreadByte Order!" />
+  <input type="hidden" name="_next" value="https://breadbyte.netlify.app/thank-you.html" />
+
   <input type="text" name="name" placeholder="Your Name" required />
   <input type="email" name="email" placeholder="Email Address" required />
+  <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" />
   <textarea name="message" placeholder="What would you like to order?" required></textarea>
-  
+
   <button type="submit">Submit</button>
 </form>
   </section>
